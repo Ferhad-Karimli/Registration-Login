@@ -40,9 +40,10 @@ const onErrorRequest = (error) => {
 const onResponse = (response) => Promise.resolve(response);
 
 const onErrorResponse = (error) => {
-  if (error.response && error.response.status === 401) {
-    const errorMessage = error.response.data.message;
-    toast.error(errorMessage);
+  if (
+    (error.response && error.response.status === 401) ||
+    error.response.status === 403
+  ) {
     window.location.href = "/login";
   }
   return Promise.reject(error);
