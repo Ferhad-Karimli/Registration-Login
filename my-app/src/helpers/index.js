@@ -4,10 +4,6 @@ export const getToken = () => {
   return token;
 };
 export const getChartData = async () => {
-  try {
-  } catch (error) {
-    console.log("error");
-  }
   const response = await baseAPI.get("/data");
   return response.data;
 };

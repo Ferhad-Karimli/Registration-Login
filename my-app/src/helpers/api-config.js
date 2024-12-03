@@ -10,7 +10,6 @@ export const baseAPI = axios.create({
 });
 
 const onRequest = (request) => {
-  console.log(request, "request");
   if (request.delayRequest) {
     return new Promise((resolve) => {
       setTimeout(() => {
