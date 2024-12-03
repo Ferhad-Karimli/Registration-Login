@@ -8,7 +8,6 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { theme } from "./settings/theme";
 import "react-toastify/dist/ReactToastify.css";
 import queryClient from "./settings/react-query-settings";
-import axios from "axios";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

@@ -9,6 +9,8 @@ Also, Custom error messages are added to all inputs. If an input is empty, it di
 @Material-Ui
 @axios
 @react-hook-form
+@react-router-dom
+@tanstack/react-query
 @react-toastify
 @recharts
 
